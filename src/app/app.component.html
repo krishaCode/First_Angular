@@ -1,3 +1,26 @@
-<h1>App Component</h1>
-<app-login></app-login>
-<app-dash-board></app-dash-board>
+<h1>{{title}}</h1>
+<h2>{{2+2}}</h2>
+<img [src]="imgUrl"/>
+<img src="{{imgUrl}}"/>
+<br>
+<button [disabled]="isDisabled">Click Me</button>
+<hr />
+<button [attr.aria-lable]="arialabltex">Attribute Binding</button>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>John Doe</td>
+        <td>30</td>
+    </tr>
+    <tr>
+        <td>paol</td>
+        <td>32</td>
+    </tr>
+    <tr>
+        <td [colSpan]="colspan">Sum of Ages = 62</td>
+    </tr>
+</table>

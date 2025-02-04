@@ -10,5 +10,10 @@ import { DashBoardComponent } from "./dash-board/dash-board.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Angular Project';
+  title:string = 'Hello World';
+  imgUrl:string ="C:\Users\KRISHAN\Desktop";
+  isDisabled:boolean = false;
+  arialabltex="This is button."
+  colspan=2;
+
 }

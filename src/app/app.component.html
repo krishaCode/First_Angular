@@ -6,21 +6,28 @@
 <button [disabled]="isDisabled">Click Me</button>
 <hr />
 <button [attr.aria-lable]="arialabltex">Attribute Binding</button>
+<!-- 
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>paol</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td [colSpan]="colspan">Sum of Ages = 62</td>
+        </tr>
+    </table> -->
 
-<table>
-    <tr>
-        <th>Name</th>
-        <th>Age</th>
-    </tr>
-    <tr>
-        <td>John Doe</td>
-        <td>30</td>
-    </tr>
-    <tr>
-        <td>paol</td>
-        <td>32</td>
-    </tr>
-    <tr>
-        <td [colSpan]="colspan">Sum of Ages = 62</td>
-    </tr>
-</table>
+    <h2 [style.color]="color" [style.backgroundColor]="'yellow'">{{title}}</h2>
+    <h4 [class.active]="isActive" [class.nonactive]="!isActive">{{title}}</h4>
+    <hr/>
+    <p [style.color]="isActive ? 'red':'green'" [style.backgroundColor]="isActive ? 'green':'red'">Paragraph</p>
+    <h5 [class.active]="name=='Krishan'">This is H5 tag</h5>
+    <h5 [class.nonactive]="name!='Krishan'">This is H5 tag</h5>

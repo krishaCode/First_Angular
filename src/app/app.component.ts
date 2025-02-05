@@ -15,5 +15,7 @@ export class AppComponent {
   isDisabled:boolean = false;
   arialabltex="This is button."
   colspan=2;
-
+color:string='red';
+isActive:boolean = false;
+name:string='Krishan'
 }

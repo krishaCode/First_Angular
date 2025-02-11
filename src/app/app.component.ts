@@ -10,6 +10,7 @@ import { DashBoardComponent } from "./dash-board/dash-board.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+
   title:string = 'Hello World';
   imgUrl:string ="C:\Users\KRISHAN\Desktop";
   isDisabled:boolean = false;
@@ -18,4 +19,16 @@ export class AppComponent {
 color:string='red';
 isActive:boolean = false;
 name:string='Krishan'
+
+buttonclicked() {
+  console.log("Button clicked")
 }
+
+InputEvent(event: KeyboardEvent) {
+if(event.key == "Enter"){
+  console.log("Enter clicked")
+}
+  }
+
+}
+

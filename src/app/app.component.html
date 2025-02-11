@@ -5,6 +5,7 @@
 <br>
 <button [disabled]="isDisabled">Click Me</button>
 <hr />
+ <!-- Property binding -->
 <button [attr.aria-lable]="arialabltex">Attribute Binding</button>
 <!-- 
     <table>
@@ -25,9 +26,16 @@
         </tr>
     </table> -->
 
+    <!-- Style bynding -->
     <h2 [style.color]="color" [style.backgroundColor]="'yellow'">{{title}}</h2>
+    <!-- Class binding -->
     <h4 [class.active]="isActive" [class.nonactive]="!isActive">{{title}}</h4>
     <hr/>
     <p [style.color]="isActive ? 'red':'green'" [style.backgroundColor]="isActive ? 'green':'red'">Paragraph</p>
     <h5 [class.active]="name=='Krishan'">This is H5 tag</h5>
     <h5 [class.nonactive]="name!='Krishan'">This is H5 tag</h5>
+
+    <button (click)="buttonclicked()">Click Me</button>
+   <Br>
+<Br>
+    <input (keyup)="InputEvent($event)"/>

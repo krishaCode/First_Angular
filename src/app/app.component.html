@@ -36,6 +36,19 @@
     <h5 [class.nonactive]="name!='Krishan'">This is H5 tag</h5>
 
     <button (click)="buttonclicked()">Click Me</button>
-   <Br>
-<Br>
+   <Br/>
+<Br/>
     <input (keyup)="InputEvent($event)"/>
+    <Br/>
+        <br/>
+        <input (keydown.shift.enter)="KeyDownClick()"/>
+        <br/><br/>
+        <input (keyup)="Krypressed(inputRef)" #inputRef id="Name"/>
+        <br/>
+        <h1>{{inputValue}}</h1>
+
+        <hr>
+
+        <!-- Two way binding  -->
+<input [(ngModel)]="twoWayValue"/>   
+<h1>{{twoWayValue}}</h1>      
